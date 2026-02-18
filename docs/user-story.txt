@@ -1,0 +1,39 @@
+**User Story: Reset Password**
+
+**Title:** Reset Password via Email Link
+
+**As a** registered user
+**I want** to reset my password if I forget it
+**So that** I can regain access to my account securely
+
+---
+
+### Acceptance Criteria
+
+1. A “Forgot Password” link is available on the login page.
+2. When a registered email address is submitted:
+
+   * The system sends a password reset email containing a secure, time-limited token.
+   * A generic success message is displayed, regardless of whether the email exists, to prevent user enumeration.
+3. The reset link:
+
+   * Expires after a defined period, for example 30 minutes.
+   * Can only be used once.
+4. The user is prompted to enter and confirm a new password.
+5. The new password must meet defined complexity rules:
+
+   * Minimum length
+   * Combination of uppercase, lowercase, number, and special character
+6. Upon successful reset:
+
+   * The password is updated in the system.
+   * Existing active sessions are invalidated.
+   * The user is redirected to the login page with a success message.
+
+---
+
+### Non-Functional Requirements
+
+* Reset token must be cryptographically secure.
+* All reset activities must be logged for audit purposes.
+* The process must comply with security best practices for authentication flows.

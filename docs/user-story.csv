@@ -1,0 +1,7 @@
+User_Story_ID,Title,Description
+US-001,Reset Password,"As a registered user, I want to reset my password if I forget it so that I can regain access to my account securely."
+US-002,Login to the Site,"As a registered user, I want to log in using my valid credentials so that I can access my account and use the system features."
+US-003,Logout from the Site,"As a logged-in user, I want to log out of the site so that I can securely end my session and prevent unauthorized access to my account."
+US-004,View User Profile,"As a logged-in user, I want to view my profile information so that I can see my account details and update them if necessary."
+US-005,Edit User Profile,"As a logged-in user, I want to edit my profile information so that I can keep my account details up to date."
+US-006,Delete User Account,"As a logged-in user, I want to delete my account so that I can permanently remove my information from the system if I choose to do so."
